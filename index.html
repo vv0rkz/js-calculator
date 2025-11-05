@@ -3,22 +3,40 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sample Page</title>
+        <title>Calculator</title>
         <link rel="stylesheet" href="./style.css" />
     </head>
 
     <body>
-        <div>
-            <h1>Калькулятор</h1>
+        <h1>Калькулятор</h1>
+        <div class="calc">
+            <div id="result" class="calc-result">0</div>
             <div class="calc-line">
-                <input type="text" id="input1" placeholder="Введите первое число" />
-                <select id="operation">
-                    <option value="+" selected>+</option>
-                    <option value="-">-</option>
-                </select>
-                <input type="text" id="input2" placeholder="Введите второе число" />
-                <button id="calcBtn">Посчитать</button>
-                <div id="result"></div>
+                <div class="calc-item calc-item--equals">=</div>
+                <div class="calc-item calc-item--operation calc-item--delete">RM</div>
+                <div class="calc-item calc-item--operation calc-item--delete">⌫</div>
+            </div>
+            <div class="calc-line">
+                <div class="calc-item calc-item--number">7</div>
+                <div class="calc-item calc-item--number">8</div>
+                <div class="calc-item calc-item--number">9</div>
+                <div class="calc-item calc-item--operation">×</div>
+            </div>
+            <div class="calc-line">
+                <div class="calc-item calc-item--number">4</div>
+                <div class="calc-item calc-item--number">5</div>
+                <div class="calc-item calc-item--number">6</div>
+                <div class="calc-item calc-item--operation">/</div>
+            </div>
+            <div class="calc-line">
+                <div class="calc-item calc-item--number">1</div>
+                <div class="calc-item calc-item--number">2</div>
+                <div class="calc-item calc-item--number">3</div>
+                <div class="calc-item calc-item--operation">-</div>
+            </div>
+            <div class="calc-line">
+                <div class="calc-item calc-item--number calc-item--zero">0</div>
+                <div class="calc-item calc-item--operation">+</div>
             </div>
         </div>
         <script src="app.js"></script>
