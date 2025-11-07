@@ -1,8 +1,8 @@
 export default {
     types: {
         feat: { title: "✨ Фичи" },
-        bug: { title: "🐛 Обнаруженные баги" },
-        fix: { title: "🔧 Исправления" },
-        refactor: { title: "⚡ Рефакторинг" },
+        fix: { title: "🐛 Исправленные баги" },
+        refactor: { title: "🔧 Рефакторинг" },
+        build: { title: "🏗️ Инфраструктура" },
     },
 }
