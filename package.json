@@ -4,15 +4,18 @@
   "type": "module",
   "scripts": {
     "dev": "serve",
-    "bugs": "gh issue list --label bug --state open",
-    "bug": "node scripts-gh/bug.js",
     "prepare": "husky",
     "test": "echo 'No tests yet' && exit 0",
     "changelog": "changelogen",
     "release": "changelogen --release",
     "release:patch": "changelogen --release --patch",
     "release:minor": "changelogen --release --minor",
-    "release:major": "changelogen --release --major"
+    "release:major": "changelogen --release --major",
+    "bugs": "gh issue list --label bug --state open",
+    "create-bug": "node tools-gh/create-bug.js",
+    "tasks": "gh issue list --label task --state open",
+    "create-task": "node tools-gh/create-task.js",
+    "all-issues": "gh issue list --state open"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
