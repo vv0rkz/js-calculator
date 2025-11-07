@@ -1,6 +1,6 @@
 export default {
     extends: ["@commitlint/config-conventional"],
     rules: {
-        "type-enum": [2, "always", ["feat", "fix", "refactor", "build"]],
+        "type-enum": [2, "always", ["feat", "fix", "refactor", "build", "chore"]],
     },
 }
