@@ -1,6 +1,10 @@
 #!/usr/bin/env sh
 
 CURRENT_BRANCH=$(git branch --show-current)
+if [ "$CURRENT_BRANCH" = "main" ]; then
+    echo "✅ Разрешённая ветка: $CURRENT_BRANCH"
+    exit 0
+fi
 
 # Простая проверка: начинается с v и есть дефис
 if ! echo "$CURRENT_BRANCH" | grep -q "^v.*-.*"; then
