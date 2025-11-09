@@ -7,6 +7,7 @@
     "prepare": "husky",
     "test": "echo 'No tests yet' && exit 0",
     "changelog": "changelogen",
+    "update-readme": "node tools-gh/update-readme.js",
     "release": "node tools-gh/check-demo-for-release.js && changelogen --release",
     "release:patch": "changelogen --release --patch",
     "release:minor": "changelogen --release --minor",
