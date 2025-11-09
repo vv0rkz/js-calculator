@@ -57,7 +57,7 @@ const updateRes = (val) => {
                 result.textContent = result.textContent.slice(0, -1) + val
             } else if (isNaN(result.textContent.at(-1)) && isNaN(val)) {
                 // Нормализация операторов: автоматически исправлять +- -> -
-                result.textContent = result.textContent.slice(0, -2) + val
+                result.textContent = result.textContent.slice(0, -1) + val
             } else {
                 result.textContent += val
             }

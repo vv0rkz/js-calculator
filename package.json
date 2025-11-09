@@ -1,13 +1,13 @@
 {
   "name": "js-calculator",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "type": "module",
   "scripts": {
     "dev": "serve",
     "prepare": "husky",
     "test": "echo 'No tests yet' && exit 0",
     "changelog": "changelogen",
-    "release": "changelogen --release",
+    "release": "node tools-gh/check-demo-for-release.js && changelogen --release",
     "release:patch": "changelogen --release --patch",
     "release:minor": "changelogen --release --minor",
     "release:major": "changelogen --release --major",
