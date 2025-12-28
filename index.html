@@ -4,13 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Calculator</title>
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./src/style.css" />
     </head>
 
     <body>
         <h1>Калькулятор</h1>
         <div class="calc">
-            <div id="result" class="calc-result" data-key="0">0</div>
+            <div id="result" class="calc-result" data-key="0" contenteditable="true">0</div>
             <div class="calc-line">
                 <div class="calc-item calc-item--equals" data-key="Enter">=</div>
                 <div class="calc-item calc-item--operation calc-item--delete" data-key="Delete">RM</div>
@@ -39,6 +39,6 @@
                 <div class="calc-item calc-item--operation" data-key="+">+</div>
             </div>
         </div>
-        <script src="app.js"></script>
+        <script src="./src/app.js"></script>
     </body>
 </html>

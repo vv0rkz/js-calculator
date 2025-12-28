@@ -1,5 +1,6 @@
 const calcBtn = document.querySelectorAll(".calc-item")
 const result = document.getElementById("result")
+result.focus()
 
 const EMPTY_VAL = "0"
 

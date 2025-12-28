@@ -6,19 +6,13 @@
     "dev": "browser-sync start --server --files '**/*.html, **/*.css, **/*.js' --port 3000 --no-notify",
     "prepare": "husky",
     "test": "echo 'No tests yet' && exit 0",
-    "changelog": "changelogen",
-    "update-readme": "node tools-gh/update-readme.js",
-    "release": "node tools-gh/check-demo-for-release.js && changelogen --release && npm run update-readme",
-    "push-release": "node tools-gh/push-release-to-main.js",
-    "bugs": "gh issue list --label bug --state open",
-    "create-bug": "node tools-gh/create-bug.js",
-    "tasks": "gh issue list --label task --state open",
-    "create-task": "node tools-gh/create-task.js",
-    "all-issues": "gh issue list --state open"
+    "jst": "jst",
+    "_": "jst"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.1.0",
-    "@commitlint/config-conventional": "^20.0.0",
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
+    "@vv0rkz/js-template": "^1.0.0",
     "browser-sync": "^3.0.4",
     "changelogen": "^0.6.2",
     "husky": "^9.1.7"

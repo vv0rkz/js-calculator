@@ -30,6 +30,7 @@ h1 {
     background: #34495e;
     color: white;
     font-size: 2em;
+    font-family: monospace;
     padding: 20px;
     text-align: right;
     border-radius: 10px;
